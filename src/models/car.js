@@ -25,6 +25,10 @@ const Car = sequelize.define('car', {
     model_id: {
         type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+            model: 'models',
+            key: 'id',
+        },
     },
 }, { timestamps: false });
 
