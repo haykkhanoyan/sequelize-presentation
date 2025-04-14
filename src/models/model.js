@@ -11,6 +11,10 @@ const Model = sequelize.define('model', {
     make_id: {
         type: DataTypes.INTEGER,
         allowNull: true,
+        references: {
+            model: 'makes',
+            key: 'id',
+        },
     },
 }, { timestamps: false });
 
