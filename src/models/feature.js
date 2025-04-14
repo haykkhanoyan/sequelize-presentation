@@ -1,6 +1,5 @@
 import {DataTypes} from 'sequelize';
 import sequelize from '../config/db.js';
-import Car from "./car.js";
 
 const Feature = sequelize.define('feature', {
     id: {

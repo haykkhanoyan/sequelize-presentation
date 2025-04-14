@@ -1,4 +1,3 @@
-import CarService from '../services/car.service.js'
 import ModelService from "../services/model.service.js";
 
 class ModelController {
